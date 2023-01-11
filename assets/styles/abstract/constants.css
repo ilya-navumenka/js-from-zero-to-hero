@@ -1,0 +1,19 @@
+:root {
+    --content-width: 1197px;
+    --tablet-width: 768px;
+    --mobile-big-width: 415px;
+
+    --font-prim: 'Open Sans', Verdana, sans-serif;
+    --font-add: 'Poppins', Verdana, sans-serif;
+
+    --color-light: #ffffff;
+    --color-hamburger: #173A56;
+    --color-primary: #FF9900;
+    --color-border: #D7D7D7;
+    --color-text: #544837;
+    --color-hovered: #BCD0E5;
+    --color-additional: #FF7549;
+
+
+    --transition: all .3s ease-out;
+}

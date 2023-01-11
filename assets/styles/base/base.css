@@ -1,0 +1,73 @@
+@import "../abstract/constants.css" screen;
+
+html {
+    font-size: 10px;
+}
+
+body {
+    font-family: var(--font-prim);
+    font-size: 1.6rem;
+    height: 2.6rem;
+    font-weight: normal;
+}
+
+h1 {
+    font-family: var(--font-add);
+    font-size: 4.4rem;
+    height: 5.4rem;
+}
+
+@media (max-width: 415px) {
+    h1 {
+        font-size: 3.2rem;
+        height: 4.2rem;
+    }
+}
+
+h2 {
+    font-size: 3.4rem;
+    height: 4.6rem;
+}
+
+@media (max-width: 415px) {
+    h2 {
+        font-size: 2.4rem;
+        height: 3.3rem;
+    }
+}
+
+h3 {
+    font-size: 2.4rem;
+    height: 3.4rem;
+}
+
+@media (max-width: 415px) {
+    h3 {
+        font-size: 2.1rem;
+        height: 3.1rem;
+    }
+}
+
+h4 {
+    font-size: 2.2rem;
+    height: 3.0rem;
+    font-weight: 600;
+}
+
+@media (max-width: 415px) {
+    h4 {
+        font-size: 2.0rem;
+        height: 3.0rem;
+    }
+}
+
+
+h5 {
+    font-size: 1.6rem;
+    height: 2.6rem;
+}
+
+.block-shadowed {
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.05);
+    border-radius: 10px;
+}

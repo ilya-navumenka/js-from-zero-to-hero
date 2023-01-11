@@ -1,0 +1,51 @@
+@import "../abstract/constants.css" screen;
+
+.hamburger {
+    display: none;
+    position: relative;
+    width: 31px;
+    height: 25px;
+    margin-right: 37px;
+}
+
+@media (max-width: 768px) {
+    .hamburger {
+        display: inline-block; 
+    }
+}
+
+.hamburger::before {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    background-color: var(--color-hamburger);
+    border-radius: 5px;
+    width: 100%;
+    height: 3px;
+    top: 0;
+    left: 0;
+}
+
+.hamburger::after {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    background-color: var(--color-hamburger);
+    border-radius: 5px;
+    width: 100%;
+    height: 3px;
+    bottom: 0;
+    left: 0;
+}
+
+.hamburger__line {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    background-color: var(--color-hamburger);
+    border-radius: 5px;
+    width: 100%;
+    height: 3px;
+    top: calc( 50% - 1.5px );
+    left: 0;
+}

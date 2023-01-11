@@ -1,0 +1,24 @@
+@import "../abstract/constants.css" screen;
+
+.navigation {
+    display: flex;
+    font-size: 1.5rem;
+    line-height: 2.8rem;
+}
+
+.navigation__link {
+    list-style: none;
+    padding: 0 10px;
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.navigation__link:hover {
+    color: var(--color-primary);
+}
+
+@media (max-width: 768px) {
+    .header__navigation {
+        display: none;
+    }
+}
