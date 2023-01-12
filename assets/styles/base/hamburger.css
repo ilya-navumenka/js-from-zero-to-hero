@@ -1,11 +1,13 @@
-@import "../abstract/constants.css" screen;
-
 .hamburger {
     display: none;
     position: relative;
     width: 31px;
     height: 25px;
     margin-right: 37px;
+}
+
+.hamburger.active {
+    transform: translateX(0) translateY(0) rotate(90deg);
 }
 
 @media (max-width: 768px) {
@@ -48,4 +50,60 @@
     height: 3px;
     top: calc( 50% - 1.5px );
     left: 0;
+}
+
+.popup {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .popup {
+        position: fixed;
+        top: 120px;
+        left: -100%;
+        width: 100%;
+        height: 100%;
+        background-color: var(--color-light);
+        z-index: 100;
+        display: flex;
+        transition: 0.3s;
+    }
+
+    .popup.open {
+        left: 0;
+    }
+
+    .popup .navigation {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: start;
+        padding: 50px 0;
+        overflow: auto;
+    }
+
+    .popup .navigation > li {
+        width: 100%;
+    }
+
+    .popup .navigation > li > a {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        padding: 20px 0;
+        font-size: 20px;
+        font-weight: bold;
+        color: var(--color-link)
+    }
+
+    .popup .navigation > li > a:hover {
+        background-color: var(--color-background);
+        color: var(--color-primary)
+    }
+
+    .body.noscroll {
+        overflow: hidden;
+    }
 }

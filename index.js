@@ -1,6 +1,7 @@
 window.onload = function() {
     addTagsClickHandler();
-    addToolsClickHandler();
+    addHamburger();
+    removeHamburger();
 }
 
 const addTagsClickHandler = () => {
@@ -46,8 +47,42 @@ const filterStrategyBySelectedTag = (selectedTag) => {
         strategy.classList.add('strategy_hidden');
         strategy.querySelectorAll('.tag').forEach(tag => {
             if (tag.innerText === selectedTag) {
-                strategy.classList.remove('strategy_hidden')
+                strategy.classList.remove('strategy_hidden');
             }
         })
     })
+}
+
+const addHamburger = () => {
+    const hamburger = document.querySelector('.hamburger');
+    const popup = document.querySelector('.popup');
+    const menu = document.querySelector('.navigation').cloneNode(1);
+    const body = document.body;
+
+    hamburger.addEventListener('click', hamburgerHandler);
+
+    function hamburgerHandler(e) {
+        e.preventDefault();
+        popup.classList.toggle('open');
+        hamburger.classList.toggle('active');
+        body.classList.toggle('noscroll');
+        renderPopup();
+    }
+
+    function renderPopup() {
+        popup.appendChild(menu)
+    }
+}
+
+const removeHamburger = () => {
+    const popup = document.querySelector('.popup');
+
+    popup.addEventListener('click', closeHamburger);
+
+    function closeHamburger(e) {
+        let classes = e.target.classList;
+        if (!classes.contains('popup')) {
+            popup.classList.toggle('open').remove();
+        }
+    }
 }

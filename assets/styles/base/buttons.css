@@ -1,5 +1,3 @@
-@import "../abstract/constants.css" screen;
-
 .button {
     font-family: var(--font-prim);
     padding: 11px 25px 13px;

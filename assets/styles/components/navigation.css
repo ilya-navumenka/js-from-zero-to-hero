@@ -1,16 +1,18 @@
-@import "../abstract/constants.css" screen;
-
 .navigation {
     display: flex;
     font-size: 1.5rem;
     line-height: 2.8rem;
 }
 
-.navigation__link {
+.navigation li {
     list-style: none;
+}
+
+.navigation__link {
     padding: 0 10px;
     cursor: pointer;
     transition: var(--transition);
+    color: var(--color-link);
 }
 
 .navigation__link:hover {

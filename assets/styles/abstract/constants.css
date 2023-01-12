@@ -2,10 +2,8 @@
     --content-width: 1197px;
     --tablet-width: 768px;
     --mobile-big-width: 415px;
-
     --font-prim: 'Open Sans', Verdana, sans-serif;
     --font-add: 'Poppins', Verdana, sans-serif;
-
     --color-light: #ffffff;
     --color-hamburger: #173A56;
     --color-primary: #FF9900;
@@ -14,7 +12,7 @@
     --color-hovered: #BCD0E5;
     --color-additional: #FF7549;
     --color-tag: #F5F5F5;
-
-
+    --color-background: #FFEEE1;
+    --color-link: #000000;
     --transition: all .3s ease-out;
 }

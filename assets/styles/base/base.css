@@ -1,7 +1,6 @@
-@import "../abstract/constants.css" screen;
-
 html {
     font-size: 10px;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -9,6 +8,15 @@ body {
     font-size: 1.6rem;
     height: 2.6rem;
     font-weight: normal;
+}
+
+form {
+    display: inline-block;
+}
+
+a {
+    text-decoration: none;
+    list-style: none;
 }
 
 h1 {
