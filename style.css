@@ -6,6 +6,7 @@
 @import "/assets/styles/base/logo.css" screen;
 @import "/assets/styles/base/buttons.css" screen;
 @import "/assets/styles/base/icons.css" screen;
+@import "/assets/styles/base/tags.css" screen;
 
 @import "/assets/styles/layouts/wrapper.css" screen;
 @import "/assets/styles/layouts/header.css" screen;
@@ -15,4 +16,5 @@
 @import "/assets/styles/components/navigation.css" screen;
 @import "/assets/styles/components/promo.css" screen;
 @import "/assets/styles/components/tools.css" screen;
+@import "/assets/styles/components/strategies.css" screen;
 
