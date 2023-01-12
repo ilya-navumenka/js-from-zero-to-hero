@@ -1,0 +1,49 @@
+.tools__wrapper {
+    padding-bottom: 90px;
+    background-image: url("/assets/images/background/tools-bg.svg");
+    background-position: center bottom;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.tools__title {
+    max-width: 462px;
+    margin: auto;
+    text-align: center;
+    margin-bottom: 70px;
+}
+
+@media (max-width: 768px) {
+    .tool-container {
+        flex-wrap: wrap;
+    }
+
+    .tool-container >.tool  {
+        flex-basis: 43%;
+    }
+}
+
+@media (max-width: 415px) {
+    .tool-container >.tool {
+        flex-basis: 100%;
+        margin-bottom: 47px;
+    }
+}
+
+@media (max-width: 768px) {
+    .tool {
+        text-align: center;
+    }
+
+    .tool-container >.tool  {
+        flex-basis: 43%;
+    }
+}
+
+.tool__icon {
+    margin: 0 0 30px;
+}
+
+.tool__title {
+    margin: 0 0 16px;
+}

@@ -1,0 +1,49 @@
+.ico {
+    cursor: pointer;
+    display: inline-block;
+}
+
+.icon-square {
+    width: 50px;
+    height: 50px;
+    border-radius: 19px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.ico_html {
+    background-image: url("/assets/images/icons/html.svg");
+    width: 50px;
+    height: 50px;
+}
+
+.ico_css {
+    background-image: url("/assets/images/icons/css.svg");
+    width: 50px;
+    height: 50px;
+}
+
+.ico_js {
+    background-image: url("/assets/images/icons/js.svg");
+    width: 50px;
+    height: 50px;
+}
+
+.ico_ts {
+    background-image: url("/assets/images/icons/ts.svg");
+    width: 50px;
+    height: 50px;
+}
+
+.ico_phone {
+    background-image: url("/assets/images/icons/phone.svg");
+    width: 13px;
+    height: 13px;
+}
+
+.ico_letter {
+    background-image: url("/assets/images/icons/letter.svg");
+    width: 11px;
+    height: 8px;
+}

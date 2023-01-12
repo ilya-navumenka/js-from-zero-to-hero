@@ -1,0 +1,121 @@
+.contact-me {
+    background: var(--color-background);
+    padding: 62px 0;
+}
+
+@media (max-width: 768px) {
+    .contact-me {
+        text-align: center;
+    }
+}
+
+@media (max-width: 768px) {
+    form {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 768px) {
+    .contact-me-container {
+        flex-direction: column;
+    }
+}
+
+.contact-me__form input, textarea {
+    border: 1px solid var(--color-light);
+    background-color: var(--color-light);;
+    padding: 10px 21px;
+    border-radius: 5px;
+    margin-bottom: 19px;
+}
+
+.contact-me__form textarea:focus {
+    border-color: var(--color-primary);
+    outline: none;
+}
+
+.contact-me__form textarea {
+    resize: none;
+    width: 80%;
+    height: 160px;
+}
+
+.contact-me__line {
+    margin-bottom: 19px;
+}
+
+@media (max-width: 768px) {
+    .contact-me__line {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media (max-width: 415px) {
+    .contact-me__line  {
+        flex-direction: column;
+        margin-bottom: 0;
+    }
+
+    .contact-me__line >* {
+        margin-bottom: 19px;
+    }
+}
+
+.contact-me__button >* {
+        min-width: 117px;
+}
+
+@media (max-width: 415px) {
+    .contact-me__button  {
+        margin-top: 24px;
+    }
+}
+
+.contact-me__title {
+    margin: 0 0 17px;
+}
+
+.contact-me__content {
+    max-width: 520px;
+}
+
+@media (max-width: 768px) {
+    .contact-me__content {
+        max-width: 100%;
+        margin-bottom: 52px;
+    }
+}
+
+.contact-me__text {
+    margin: 0 0 34px;
+}
+
+.contact-me__link {
+    margin: 0 0 19px;
+    display: flex;
+    align-items: center;
+    font-size: 2.5rem;
+    line-height: 2.6rem;
+    font-weight: normal;
+}
+
+@media (max-width: 768px) {
+    .contact-me__link {
+        justify-content: center;
+    }
+}
+
+.contact-me__link a {
+    margin-left: 11px;
+    color: var(--color-text);
+    text-decoration: none;
+}
+
+.contact-me__link:hover a {
+    text-decoration: underline;
+}

@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <title>Zero to Hero</title>
+</head>
+<body>
+    <div class="popup"></div>
+    <header class="header">
+        <div class="wrapper header__wrapper">
+            <div class="header__logo-line">
+                <span class="header__hamburger hamburger"><span class="hamburger__line"></span></span>
+                <a href="#" class="logo">
+                    <img src="/assets/images/logo/logo.png" class="logo-img" alt="logo" />
+                </a>
+            </div>
+            <nav class="header__navigation">
+                <ul class="navigation">
+                    <li><a href="#sum" class="navigation__link">Summary</a></li>
+                    <li><a href="#skill" class="navigation__link">My Skills</a></li>
+                    <li><a href="#strategy" class="navigation__link">Strategy</a></li>
+                    <li><a href="#about" class="navigation__link">About Me</a></li>
+                    <li><a href="#contact" class="navigation__link">Contact Me</a></li>
+                </ul>  
+            </nav>
+            <div class="header__buttons">
+                <form action="https://www.linkedin.com/in/ilyanavumenka/" target="_blank">
+                    <button class="button button_bordered">LinkedIn</button>
+                </form>
+                <form action="https://github.com/ilya-navumenka" target="_blank">
+                    <button class="button button_colored">GitHub</button>
+                </form>
+            </div>     
+        </div>
+    </header>
+    <section class="promo">
+        <div class="wrapper promo__wrapper">
+            <div class="promo__content" id="sum">
+                <h1 class="promo__title">Ilya Navumenka</h1>
+                <p class="promo__text">Hello, I am a Front End developer with knowledge of various development tools. I am 23 years old.</p>
+                <p class="promo__text"><b>University</b>: International University "MITSO".</p>
+                <p class="promo__text"><b>Qualification</b>: Software engineer-economist.</p>
+            </div>
+            <div class="promo__box">
+                <img src="./assets/images/promo/promo.png" class="promo__image" alt="promo">
+            </div>
+        </div>
+    </section>
+    <section class="tools">
+        <div class="wrapper tools__wrapper" id="skill">
+            <h2 class="tools__title">My Skills</h2>
+            <div class="layout-4-column tool-container">
+                <div class="tool">
+                    <div class="tool__icon">
+                        <span class="icon-square">
+                            <span class="ico ico_html"></span>
+                        </span>
+                    </div>
+                    <h4 class="tool__title">HTML</h4>
+                    <p class="tool__text">A standardized hypertext markup language for viewing web pages in a browser</p>
+                </div>
+                <div class="tool">
+                    <div class="tool__icon">
+                        <span class="icon-square">
+                            <span class="ico ico_css"></span>
+                        </span>
+                    </div>
+                    <h4 class="tool__title">CSS</h4>
+                    <p class="tool__text">A formal language for describing the appearance of a document written using a markup language</p>
+                </div>
+                <div class="tool">
+                    <div class="tool__icon">
+                        <span class="icon-square">
+                            <span class="ico ico_js"></span>
+                        </span>
+                    </div>
+                    <h4 class="tool__title">JavaScript</h4>
+                    <p class="tool__text">Multi-paradigm programming language. Supports object-oriented, imperative and functional styles</p>
+                </div>
+                <div class="tool">
+                    <div class="tool__icon">
+                        <span class="icon-square">
+                            <span class="ico ico_ts"></span>
+                        </span>
+                    </div>
+                    <h4 class="tool__title">TypeScript</h4>
+                    <p class="tool__text">A programming language introduced by Microsoft in 2012 and positioned as a web application development tool that extends the capabilities of JavaScript</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="strategies">
+        <div class="wrapper" id="strategy">
+            <h2 class="strategies__title">Web development strategy</h2>
+            <p class="strategies__description">Some Important Skills a Web Developer Should Possess</p>
+            <div class="strategies__tags tags">
+                <span class="tag tag_selected">All</span>
+                <span class="tag tag_bordered">Backend</span>
+                <span class="tag tag_bordered">Library</span>
+                <span class="tag tag_bordered">Framework</span>
+            </div>
+            <div class="layout-3-column strategy-wrapper">
+                <article class="strategy block-shadowed">
+                    <img class="strategy__image" src="./assets/images/strategies/angular.png" alt="angular">
+                    <div class="strategy__content">
+                        <h3 class="strategy__name">Angular</h3>
+                        <div class="strategy__tags tags">
+                            <span class="tag tag_colored">Framework</span>
+                        </div>
+                    </div>
+                </article>
+                <article class="strategy block-shadowed">
+                    <img class="strategy__image" src="./assets/images/strategies/react.png" alt="react">
+                    <div class="strategy__content">
+                        <h3 class="strategy__name">React</h3>
+                        <div class="strategy__tags tags">
+                            <span class="tag tag_colored">Library</span>
+                        </div>
+                    </div>
+                </article>
+                <article class="strategy block-shadowed">
+                    <img class="strategy__image" src="./assets/images/strategies/vue.png" alt="vue">
+                    <div class="strategy__content">
+                        <h3 class="strategy__name">Vue</h3>
+                        <div class="strategy__tags tags">
+                            <span class="tag tag_colored">Framework</span>
+                        </div>
+                    </div>
+                </article>
+                <article class="strategy strategy_wide block-shadowed">
+                    <img class="strategy__image" src="/assets/images/strategies/node.png" alt="node">
+                    <div class="strategy__content">
+                        <h3 class="strategy__name">Node.js</h3>
+                        <div class="strategy__tags tags">
+                            <span class="tag tag_colored">Backend</span>
+                        </div>
+                    </div>
+                </article>
+                <article class="strategy block-shadowed">
+                    <img class="strategy__image" src="./assets/images/strategies/git.png" alt="git">
+                    <div class="strategy__content">
+                        <h3 class="strategy__name">Git</h3>
+                        <div class="strategy__tags tags">
+                            <span class="tag tag_colored">System</span>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+    <section class="about-me">
+        <div class="wrapper" id="about">
+            <h2 class="about-me__title">About Me</h2>
+            <p class="about-me__description">For the last 4 years I have studied as a software engineer-economist. As a result, I chose the direction of Front-End development and really want to apply my skills to commercial projects. Very interesting in working with creative teams who are going to create something new and wonderful, working in a comfortable team-oriented environment.</p>
+        </div>
+    </section>
+    <section class="contact-me">
+        <div class="wrapper" id="contact">
+            <h2 class="contact-me__title">Contact Me</h2>
+            <div class="layout-2-column contact-me-container">
+                <div class="contact-me__content">
+                    <p class="contact-me__text">My contact details.</p>
+                    <p class="contact-me__link">
+                        <span class="icon-round icon-round_white"><span class="ico ico_phone"></span></span>
+                        <a href="tel:+375447956513">+375 (44) 795-65-13</a>
+                    </p>
+                    <p class="contact-me__link">
+                        <span class="icon-round icon-round_white"><span class="ico ico_letter"></span></span>
+                        </span> <a href="mailto:ilyanavumenka@icloud.com">ilyanavumenka@icloud.com</a>
+                    </p>
+                </div>
+                <div class="contact-me__form">
+                    <form action method="POST">
+                        <div class="layout-2-column contact-me__line">
+                            <input type="text" name="name" placeholder="Your name">
+                            <input type="email" name="email" placeholder="Your email">
+                        </div>
+                        <textarea name="question" placeholder="What do you want to ask?" class="contact-me__line"></textarea>
+                        <div class="contact-me__button">
+                            <button type="submit" class="button button_colored">Send</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="wrapper footer__wrapper">
+            <a href="#" class="logo">
+                <img src="/assets/images/logo/logo.png" class="logo-img" alt="logo" />
+            </a>
+            <div class="footer-navigation layout-3-column">
+                <div class="footer-navigation__column">
+                    <h4 class="footer-navigation__title">Quick Links</h4>
+                    <ul class="footer-navigation__links">
+                        <li><a href="#">Resume</a></li>
+                        <li><a href="#sum">Summary</a></li>
+                        <li><a href="#skill">My Skills</a></li>
+                    </ul>
+                </div>
+                <div class="footer-navigation__column">
+                    <h4 class="footer-navigation__title">Quick Links</h4>
+                    <ul class="footer-navigation__links">
+                        <li><a href="#strategy">Strategy</a></li>
+                        <li><a href="#about">About Me</a></li>
+                        <li><a href="#contact">Contact Me</a></li>
+                    </ul>
+                </div>
+                <div class="footer-navigation__column">
+                    <ul class="footer-navigation__links">
+                        <li>2023 © All rights reserved</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="./index.js"></script> 
+</body>
+</html>
